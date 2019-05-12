@@ -1,0 +1,35 @@
+
+body {
+    background-color: #bbb;
+    margin: 0;
+}
+
+.container {
+    overflow:hidden;
+    position:relative;
+    width:100px;
+}
+
+.scroll-img {
+    position: absolute;
+    top:0;
+    
+    height:100px;
+    z-index:0;
+    width:100px;
+}
+
+.scroll-animated {
+    z-index:10;
+    position:relative;
+    z-index:10;
+    left: 100vh;
+    width: 100px;
+    height: 100px;    
+    animation: slide 0.5s forwards;
+    overflow:hidden;
+    width:100px;
+}
+@keyframes slide {
+    100% { left: 0; }
+}
