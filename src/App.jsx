@@ -15,7 +15,7 @@ class App extends Component {
         this.intervalId = setInterval(this.nextImage, 1000)
     }
     componentWillUnmount = () => {
-        cancelInterval(this.intervalId)
+        clearInterval(this.intervalId)
     }
     nextImage = () => {
         this.setState({ pictureIndex: this.state.pictureIndex + 1 })
